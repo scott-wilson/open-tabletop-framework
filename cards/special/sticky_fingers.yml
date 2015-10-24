@@ -1,0 +1,7 @@
+name: Sticky Fingers
+passive: Get 40% chance to steal something, but have a 50% chance to automatically try to steal something in arm's reach.
+active: Steal any one thing that can be carried without trying.
+rating: -1
+requires: null
+stackable: true
+out_of_turn: true

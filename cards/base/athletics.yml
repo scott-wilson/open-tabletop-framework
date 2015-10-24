@@ -1,0 +1,7 @@
+name: Athletics
+passive: Add 10% to athletics
+active: Add 50% to athletics
+rating: 1
+requires: null
+stackable: false
+out_of_turn: false

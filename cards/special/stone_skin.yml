@@ -1,0 +1,7 @@
+name: Stone Skin
+passive: Damage Reduced by 4 HP, but fastest speed is "Medium", and can not swim.
+active: All physical damage is ignored.
+rating: 1
+requires: null
+stackable: true
+out_of_turn: true

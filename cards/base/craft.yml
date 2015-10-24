@@ -1,0 +1,7 @@
+name: Craft
+passive: Add 10% to craft
+active: Add 50% to craft
+rating: 1
+requires: null
+stackable: false
+out_of_turn: false

@@ -1,0 +1,7 @@
+name: Deception
+passive: Add 10% to deception
+active: Add 50% to deception
+rating: 1
+requires: null
+stackable: false
+out_of_turn: false

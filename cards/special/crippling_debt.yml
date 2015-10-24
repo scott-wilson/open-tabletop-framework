@@ -1,0 +1,7 @@
+name: Crippling Debt
+passive: Remove 25,000 currency from purse. Purse can be in the negatives.
+active: Get a free hand out from a friendly character.
+rating: -10
+requires: null
+stackable: true
+out_of_turn: false
