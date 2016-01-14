@@ -114,7 +114,7 @@ If the card is in front of the player, then it is on the field. Cards on the fie
 
 Ability Cards
 =============
-Ability cards define what the character is. Anything such as weapon proficiency, natural defences, martial arts skills, phobias, etc are defined in the cards. All cards have a positive and/or negative rating based off of the passive effect of the card. This rating is based off of how beneficial the card is to the player. All ability cards must be on the field, unless the game master lets the player hide the card. The card is still treated as on the field.
+Ability cards define what the character is. Anything such as weapon proficiency, natural defenses, martial arts skills, phobias, etc are defined in the cards. All cards have a positive and/or negative rating based off of the passive effect of the card. This rating is based off of how beneficial the card is to the player. All ability cards must be on the field, unless the game master lets the player hide the card. The card is still treated as on the field.
 
 Stacking
 --------
