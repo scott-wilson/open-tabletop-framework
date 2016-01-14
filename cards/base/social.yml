@@ -1,6 +1,15 @@
+metadata:
+  version: 0.1.0
+---
 name: Social
-passive: Add 10% to social
-active: Add 50% to social
+passive:
+  deception: Add 10% to social
+  skills:
+    social: +10%
+active:
+  description: Add 50% to social
+  skills:
+    social: +50%
 rating: 1
 requires: null
 stackable: false

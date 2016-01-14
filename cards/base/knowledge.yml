@@ -1,6 +1,15 @@
+metadata:
+  version: 0.1.0
+---
 name: Knowledge
-passive: Add 10% to knowledge
-active: Add 50% to knowledge
+passive:
+  description: Add 10% to knowledge
+  skills:
+    knowledge: +10%
+active:
+  description: Add 50% to knowledge
+  skills:
+    knowledge: +50%
 rating: 1
 requires: null
 stackable: false

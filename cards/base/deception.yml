@@ -1,6 +1,15 @@
+metadata:
+  version: 0.1.0
+---
 name: Deception
-passive: Add 10% to deception
-active: Add 50% to deception
+passive:
+  description: Add 10% to deception
+  skills:
+    deception: +10%
+active:
+  description: Add 50% to deception
+  skills:
+    deception: +50%
 rating: 1
 requires: null
 stackable: false

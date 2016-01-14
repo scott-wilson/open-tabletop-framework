@@ -1,6 +1,18 @@
+metadata:
+  version: 0.1.0
+---
 name: Stone Skin
-passive: Damage Reduced by 4 HP, but fastest speed is "Medium", and can not swim.
-active: All physical damage is ignored.
+passive:
+  description: Damage Reduced by 4 HP, but fastest speed is "Medium", and can not swim.
+  stats:
+    defense: +4
+    max_speed: medium
+  skills:
+    swim: 0
+active:
+  description: All physical damage is ignored.
+  stats:
+    physical_damage_received_multiplier: 0
 rating: 1
 requires: null
 stackable: true

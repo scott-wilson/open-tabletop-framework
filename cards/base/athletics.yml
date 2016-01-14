@@ -1,6 +1,15 @@
+metadata:
+  version: 0.1.0
+---
 name: Athletics
-passive: Add 10% to athletics
-active: Add 50% to athletics
+passive:
+  description: Add 10% to athletics
+  skills:
+    athletics: +10%
+active:
+  description: Add 50% to athletics
+  skills:
+    athletics: +50%
 rating: 1
 requires: null
 stackable: false
