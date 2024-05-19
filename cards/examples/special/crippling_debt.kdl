@@ -1,0 +1,27 @@
+version "0.1.0"
+
+trait {
+    name "Crippling Debt"
+    rating -10
+    stackable true
+
+    passive {
+        effects {
+            initial_debt 25000
+        }
+
+        burnt_effects {
+            initial_debt 25000
+        }
+    }
+
+    active {
+        duration "instant"
+        reset_condition "Pay 1000 gold"
+        description "Get a free item of value from a friendly character."
+
+        effects {
+            item_of_value 1
+        }
+    }
+}

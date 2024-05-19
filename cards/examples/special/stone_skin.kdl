@@ -1,0 +1,30 @@
+version "0.1.0"
+
+trait {
+    name "Stone Skin"
+    rating 1
+    stackable true
+
+    passive {
+        effects {
+            physical_armour_relative 4
+            max_speed "medium"
+            swim false
+        }
+
+        effects {
+            physical_armour_relative 2
+            max_speed "slow"
+            swim false
+        }
+    }
+
+    active {
+        duration "5 turns"
+        reset_condition "Have stone skin curse removed."
+
+        effects {
+            phsyical_damage_received 0
+        }
+    }
+}
