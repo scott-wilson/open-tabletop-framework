@@ -1,0 +1,42 @@
+version "0.1.0"
+
+trait {
+    name "Combat"
+    rating 1
+    stackable true
+
+    passive {
+        effects {
+            unarmed_combat_relative 10
+            melee_weapons_combat_relative 10
+            ranged_weapons_combat_relative 10
+            unarmed_defence_relative 10
+            melee_defence_relative 10
+            ranged_defence_relative 10
+        }
+
+        burnt_effects {
+            unarmed_combat_relative -100
+            melee_weapons_combat_relative -100
+            ranged_weapons_combat_relative -100
+            unarmed_defence_relative -100
+            melee_defence_relative -100
+            ranged_defence_relative -100
+            combat_trauma true
+        }
+    }
+
+    active {
+        duration "instant"
+        reset_condition "Cure combat related PTSD"
+
+        effects {
+            unarmed_combat_relative +100
+            melee_weapons_combat_relative +100
+            ranged_weapons_combat_relative +100
+            unarmed_defence_relative +100
+            melee_defence_relative +100
+            ranged_defence_relative +100
+        }
+    }
+}

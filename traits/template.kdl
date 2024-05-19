@@ -1,0 +1,83 @@
+/*
+(required) The version of the trait supported.
+*/
+version "0.1.0"
+
+trait {
+    /*
+    (required) The name of the trait.
+    */
+    name "trait"
+    /*
+    (required) The rating of the trait. This is an approximation of how useful
+    the trait is. Negative values mean the trait is detrimental to the agent.
+    */
+    rating 10
+    /*
+    (optional, default false) Whether the trait can be stacked with other cards
+    of the same type.
+    */
+    stackable true
+
+    /*
+    The trait can have a passive and/or an active effect. The passive effect is
+    always active, while the active effect can be activated by the agent.
+
+    If the trait's active effect is activated, then the trait is in a "burnt"
+    state after the duration of the active effect has passed. The trait can be
+    reset to its original state by meeting the reset condition.
+    */
+    passive {
+        /*
+        (optional) The description of the trait.
+        */
+        description "description"
+
+        /*
+        (required) the traits that the trait gives the agent when the trait is
+        not burnt.
+        */
+        /*
+        (required) The effects of the trait.
+        */
+        effects {
+            damage "+10%"
+        }
+
+        /*
+        (optional) The effects that the trait gives the agent when the trait is
+        burnt. If this is not specified, then the agent will not have any
+        effects when the trait is burnt.
+        */
+        burnt_effects {
+            damage "-20%"
+        }
+    }
+
+    active {
+        /*
+        (optional) The description of the trait.
+        */
+        description "description"
+        /*
+        (required) How long the trait is in an active state until it is burnt.
+        This can be a length of time, a number of uses, or until any condition
+        is met.
+        */
+        duration "duration"
+
+        /*
+        (required) The conditions that must be met to make the trait no longer
+        burned, and allow the passive traits to be activated again.
+        */
+        reset_condition "Pay 1000 gold"
+
+        /*
+        (required) The effects that the trait gives the agent when the trait is
+        in an active state.
+        */
+        effects {
+            damage "+100%"
+        }
+    }
+}

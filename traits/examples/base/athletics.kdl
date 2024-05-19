@@ -1,0 +1,26 @@
+version "0.1.0"
+
+trait {
+    name "Athletics"
+    rating 1
+    stackable true
+
+    passive {
+        effects {
+            athletics_relative 10
+        }
+
+        burnt_effects {
+            athletics_relative -50
+        }
+    }
+
+    active {
+        duration "instant"
+        reset_condition "Rest for 1 in game week"
+
+        effects {
+            athletics_relative 100
+        }
+    }
+}

@@ -1,0 +1,22 @@
+version "0.1.0"
+
+trait {
+    name "Acrobatics"
+    rating 1
+    stackable false
+
+    passive {
+        effects {
+            acrobatics_relative 10
+        }
+    }
+
+    active {
+        duration "instant"
+        reset_condition "Rest for 1 in game week"
+
+        effects {
+            acrobatics_relative 90
+        }
+    }
+}

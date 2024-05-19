@@ -1,0 +1,33 @@
+version "0.1.0"
+
+trait {
+    name "Sticky Fingers"
+    rating -1
+    stackable true
+
+    passive {
+        description "Get 40% chance to steal something, but
+        automatically try to steal something randomly with a 50%
+        chance."
+        effects {
+            theft_chance 40
+            compulsive_theft true
+            compulsive_theft_chance 50
+        }
+
+        burnt_effects {
+            compulsive_theft true
+            compulsive_theft_chance 75
+        }
+    }
+
+    active {
+        duration "instant"
+        reset_condition "Get rehabbed from prison."
+
+        description "Steal any one thing that can be carried without trying."
+        effects {
+            theft_chance 100
+        }
+    }
+}
