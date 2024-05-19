@@ -64,32 +64,49 @@ targets at a distance.
 
 | Speed     | Modifier | Actions Per Turn |
 | :-------- | :------- | :--------------- |
-| Very Slow | 0        | 1                |
-| Slow      | -1       | 2                |
-| Medium    | -2       | 3                |
-| Fast      | -3       | 4                |
-| Very Fast | -4       | 5                |
+| Very Slow | 10       | 1                |
+| Slow      | 5        | 2                |
+| Medium    | 0        | 3                |
+| Fast      | -5       | 4                |
+| Very Fast | -10      | 5                |
 
 ### Range Table
 
-| Range      | Modifier |
-| :--------- | :------- |
-| Very Close | 0        |
-| Close      | -1       |
-| Medium     | -2       |
-| Far        | -3       |
-| Very Far   | -4       |
+The calculation for the range table is `-(target_count - 1)^3`
+
+This is assuming that the following weapons have these effective ranges:
+
+| Weapon          | Range                             |
+| :-------------- | :-------------------------------- |
+| Longsword       | 80 centimeters to 110 centimeters |
+| English Longbow | 45 meters                         |
+| AK-47           | 350 meters                        |
+| Sniper Rifle    | 1000 meters                       |
+
+| Range                     | Modifier |
+| :------------------------ | :------- |
+| Very Close (>= 1 meter)   | 0        |
+| Close (>= 10 meters)      | -1       |
+| Medium (>= 50 meters)     | -8       |
+| Far (>= 100 meters)       | -27      |
+| Very Far (>= 1000 meters) | -64      |
 
 ### Target Count Table
 
-| Target Count | Modifier                  |
-| :----------- | :------------------------ |
-| 1            | 0                         |
-| 2            | -1                        |
-| 3            | -2                        |
-| 4            | -3                        |
-| 5            | -4                        |
-| More than 5  | -1 for every extra target |
+The calculation for the target count table is `-(target_count - 1)^2`
+
+| Target Count | Modifier |
+| :----------- | :------- |
+| 1            | 0        |
+| 2            | -1       |
+| 3            | -4       |
+| 4            | -9       |
+| 5            | -16      |
+| 6            | -25      |
+| 7            | -36      |
+| 8            | -49      |
+| 9            | -64      |
+| 10           | -81      |
 
 ### Duration Table
 
